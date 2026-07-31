@@ -1,8 +1,26 @@
 aid: motif-analytics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/motif-analytics.png
 name: Motif Analytics
-description: 'Motif Analytics is a company surfaced as a portfolio company of amplify-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: data-analytics. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Motif Analytics was a startup (founded 2021 by Mikhail Panko and Theron Ji, with
+  Sean Taylor as chief scientist) building interactive sequence analytics for growth and operations
+  teams. Its product let analysts explore event sequences — user journeys, funnels, order-management
+  flows — with a purpose-built Sequence Operations Language (SOL) and in-browser WebAssembly so data
+  never had to leave the browser, backed by a $5.7M seed round led by Amplify Partners and Felicis
+  (2024). As of this enrichment pass the product site and the docs.motifanalytics.com subdomain no
+  longer resolve and motifanalytics.com serves a MarkMonitor brand-protection holding page, indicating
+  the company has wound down. No public REST/GraphQL API, SDK, OpenAPI, CLI, or developer surface was
+  ever published; the sole public GitHub repo is a 2023 bug reproduction.'
 url: https://raw.githubusercontent.com/api-evangelist/motif-analytics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +28,18 @@ x-backed-by:
 - amplify-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-or-acquired
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Data Analytics
+- Product Analytics
+- Sequence Analytics
+- Growth
+- WebAssembly
+- Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,12 @@ maintainers:
 common:
 - type: Website
   url: https://motifanalytics.com
+- type: GitHubOrganization
+  url: https://github.com/motifanalytics
+- type: Blog
+  url: https://motifanalytics.medium.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
